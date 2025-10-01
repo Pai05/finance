@@ -7,8 +7,8 @@ class AIProcessor:
         """Initializes the AI Processor with the Gemini API key."""
         try:
             genai.configure(api_key=api_key)
-            self.model = genai.GenerativeModel('gemini-1.5-flash-latest')
-            logging.info("Gemini model 'gemini-1.5-flash-latest' initialized successfully.")
+            self.model = genai.GenerativeModel('models/gemini-2.5-flash')
+            logging.info("Gemini model 'models/gemini-2.5-flash' initialized successfully.")
         except Exception as e:
             logging.error(f"Failed to configure Gemini: {e}")
             raise

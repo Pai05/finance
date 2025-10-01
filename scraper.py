@@ -1,7 +1,18 @@
+import asyncio
+import sys
+
+# Set the event loop policy for Windows to be compatible with Playwright
+if sys.platform == 'win32':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 import logging
+
+# ... the rest of your scraper code
+
+# ... the rest of your scraper code
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
