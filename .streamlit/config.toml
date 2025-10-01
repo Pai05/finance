@@ -1,0 +1,15 @@
+[theme]
+# A professional and strong blue for interactive elements
+primaryColor = "#0d6efd"
+
+# A very light grey for the main background
+backgroundColor = "#f0f2f6"
+
+# A clean white for the content area and widgets
+secondaryBackgroundColor = "#ffffff"
+
+# Dark grey for text for high contrast
+textColor = "#31333F"
+
+# Font family for all text in the app
+font = "sans serif"
